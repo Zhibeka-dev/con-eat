@@ -3,11 +3,11 @@
 		if(!empty($_REQUEST['pass']) and !empty($_REQUEST['username']) and !empty($_REQUEST['lname']) and !empty($_REQUEST['number'])and !empty($_REQUEST['fname'])){
 
 		//fetch data from form input and save as variables	
-			$login=$_POST["email"];
-			$lname=$_POST["name"];
-			$number=$_POST["username"];
-			$fname=$_POST["password"];
-			$password=$_POST["confirmpassword"];
+			$email=$_POST["email"];
+			$name=$_POST["name"];
+			$username=$_POST["username"];
+			$password=$_POST["password"];
+			$confirmpassword=$_POST["confirmpassword"];
 
 		//connection with server
 			$link1=mysqli_connect("127.0.0.1", "root", ""); // save connection configurations as variable
