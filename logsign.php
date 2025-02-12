@@ -15,7 +15,7 @@
 			mysqli_select_db($link1,"usertable") or die("Can't select to db");// select database from server
 
 		//sql query
-			$queryvar="INSERT INTO `usertable`(`username`,`lname`,`fname`,`number`,`password`) VALUES ('$login','$lname','$fname', '$number', '$password')";
+			$queryvar="INSERT INTO `usertable`(`email`,`name`,`username`,`password`,`cofirmpassword`) VALUES ('$login','$lname','$fname', '$number', '$password')";
 
 		//check for query success
 			if(mysqli_query($link1,$queryvar)===TRUE){
