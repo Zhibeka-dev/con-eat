@@ -1,6 +1,6 @@
 <?php
 		//check for empty values
-		if(!empty($_REQUEST['email']) and !empty($_REQUEST['name']) and !empty($_REQUEST['username']) and !empty($_REQUEST['password'])and !empty($_REQUEST['conpassword'])){
+		if(!empty($_REQUEST['email']) and !empty($_REQUEST['name']) and !empty($_REQUEST['username']) and !empty($_REQUEST['password'])and !empty($_REQUEST['confirmpassword'])){
 
 		//fetch data from form input and save as variables	
 			$email=$_POST["email"];
