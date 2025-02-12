@@ -12,7 +12,7 @@
 		//connection with server
 			$link1=mysqli_connect("127.0.0.1", "root", ""); // save connection configurations as variable
 			mysqli_connect("127.0.0.1", "root", "") or die("Can't connect to server");//open connection with server 
-			mysqli_select_db($link1,"test") or die("Can't select to db");// select database from server
+			mysqli_select_db($link1,"usertable") or die("Can't select to db");// select database from server
 
 		//sql query
 			$queryvar="INSERT INTO `users`(`username`,`lname`,`fname`,`number`,`password`) VALUES ('$login','$lname','$fname', '$number', '$password')";
